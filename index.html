@@ -8,51 +8,250 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <style>
-    h1{
-        color: aqua;
+    body{
+        background: linear-gradient(to right, #8f8d9400 20%,  40%, rgba(147, 143, 138, 0.022) 60%, #96999663 80%);
     }
+    .navbar{
+     margin-top: 25px;
+     padding: 2px 40px;
+    }
+   table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+h1{
+    text-align: center;
+   color: black;
+    background: linear-gradient(to right, #c2b9e544 20%, rgba(101, 97, 183, 0.986) 40%, rgba(183, 203, 207, 0.282) 60%,  #c2b9e544 20%);
+   
+}
+
+
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 </style>
 
 <body>
     <div class="navbar">
+        <h1 class="linear-wipe">Micronet Product</h1>
         <table>
             <tr>
+              <th>Sensor Name/product Name</th>
+              <th>Band</th>
+              <th>Band Name</th>
+              <th>Multispectral</th>
+              <th>Panchromatic</th>
+              <th>Pansharpening</th>
               <th>Company</th>
-              <th>Contact</th>
-              <th>Country</th>
             </tr>
             <tr>
-              <td>Alfreds Futterkiste</td>
-              <td>Maria Anders</td>
-              <td>Germany</td>
+              <td>Pleides Neo Hd 15cm</td>
+              <td></td>
+              <td>RGB</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>Hybrid</td>
             </tr>
             <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
+              <td>Pleides Neo 30cm</td>
+              <td>6</td>
+              <td>RGB/NED</td>
+              <td>1.2cm</td>
+              <td>0.3cm</td>
+              <td>0.3cm</td>
+              <td>Hybrid</td>
             </tr>
             <tr>
-              <td>Ernst Handel</td>
-              <td>Roland Mendel</td>
-              <td>Austria</td>
+              <td>Pleides 50cm</td>
+              <td>4</td>
+              <td>RGB/NED</td>
+              <td>1.2cm</td>
+              <td>0.3cm</td>
+              <td>0.3cm</td>
+              <td>Hybrid</td>
             </tr>
             <tr>
-              <td>Island Trading</td>
-              <td>Helen Bennett</td>
-              <td>UK</td>
+              <td>Spot 1.5cm</td>
+              <td>4</td>
+              <td>RGB/NIR</td>
+              <td>6m(4band)</td>
+              <td>1.5cm(1band)</td>
+              <td>1.5cm(4band)</td>
+              <td>Hybrid</td>
             </tr>
-            <tr>
-              <td>Laughing Bacchus Winecellars</td>
-              <td>Yoshi Tannamuri</td>
-              <td>Canada</td>
-            </tr>
-            <tr>
-              <td>Magazzini Alimentari Riuniti</td>
-              <td>Giovanni Rovelli</td>
-              <td>Italy</td>
-            </tr>
+           
+           
           </table>
-    </div>
+          <div style="padding: 20px; text-align: center;">          <span style="background-color: red; text-align: center; ">Note:In <b>mono</b> primary,  projeccted and orthorectifier is present rather than that in <b>sterio</b>  and <b>tri sterio </b> the Orthrectifier is absent</span>
+          </div>
+    
+   <div > <h3>Three type of satellite data</h3>
+<ol><li>Optical:Colourful data</li>
+<li>Radar/SAR (syntheticApperture radar):Black and white also work in cloudy weather</li>
+<li>Elevation:object from height</li></ol></div>
+<h1 class="linear-wipe">Optical Product</h1>
+<table>
+    <tr>
+      <th>Sensor Name/product Name</th>
+      <th>Resolution</th>
+      <th>company</th>
+      
+    </tr>
+    <tr>
+      <td>Pleides Neo Hd </td>
+      <td>15cm</td>
+      <td>AIRBUS</td>
+     
+    </tr>
+    <tr>
+      <td>Pleides Neo</td>
+      <td>30cm</td>
+      <td>AIRBUS</td>
+      
+    </tr>
+    <tr>
+      <td>Pleides</td>
+      <td>50cm</td>
+      <td>AIRBUS</td>
+    </tr>
+    <tr>
+      <td>Spot 1.5cm</td>
+      <td>1.5m</td>
+      <td>AIRBUS</td>
+    </tr>
+    <tr>
+        <td>Vision</td>
+        <td>1m</td>
+        <td>AIRBUS</td>
+      </tr>
+      <tr>
+        <td>Planet Scope</td>
+        <td>3m</td>
+        <td>PLANET</td>
+      </tr>
+      <tr>
+        <td>Planet Basemap</td>
+        <td>4.77m</td>
+        <td>PLANET</td>
+      </tr>
+      <tr>
+        <td>sentinal-2</td>
+        <td>10m</td>
+        <td>sentinal</td>
+      </tr>
+      <tr>
+        <td>Landsat-8</td>
+        <td>30m</td>
+        <td>Landsat</td>
+      </tr>
+  </table>
+
+  <h1 class="linear-wipe">ELEVATION Products</h1>
+<table>
+    <tr>
+      <th>Sensor Name/product Name</th>
+      <th>Resolution</th>
+      <th>company</th>
+      
+    </tr>
+    <tr>
+      <td>TerraSar x-band </td>
+      <td>up to 1m</td>
+      <td>AIRBUS</td>
+     
+    </tr>
+    <tr>
+      <td>TanDem x-band </td>
+      <td>1.2m x 1m- 4m, 3m x 3m-6m, and 16m x 16m</td>
+      <td>AIRBUS</td>
+      
+    </tr>
+    <tr>
+      <td>Paz-data x-band </td>
+      <td>up to 25 cm</td>
+      <td>AIRBUS</td>
+    </tr>
+    <tr>
+      <td>RadarSat-2</td>
+      <td>3 to 100m</td>
+      <td>MDA</td>
+    </tr>
+   
+    <tr>
+      <td>Sentinal-1 SAR-data</td>
+      <td> 10m</td>
+      <td>Sentinal</td>
+    </tr>
+     
+     
+  </table>
+
+  <div style="text-align: center;"><h4>DEM <abbr title="DEM">Digital Elevation Modal</abbr></h4>
+    <h4>DSM <abbr title="DSM">Digital Surface Modal</abbr></h4>
+    <h4>DTM <abbr title="DTM">Digital Terrain Modal</abbr></h4></div>
+    <h1 class="linear-wipe">SAR Products</h1>
+    <table>
+      <tr>
+        <th>Sensor Name/product Name</th>
+        <th>Resolution</th>
+      <th>Pixel Size</th>
+      <th>Company</th>
+        
+      </tr>
+      <tr>
+        <td>WORLD-DEM-NEO-DSM </td>
+        <td>2m Accuracy </td>
+        <td>(2*2)or(5*5)</td>
+        <td>AIRBUS</td>
+       
+      </tr>
+      <tr>
+        <td>WORLD-DEM-NEO-DTM </td>
+        <td>2m Accuracy </td>
+        <td>(2*2)or(5*5)</td>
+        <td>AIRBUS</td>
+        
+      </tr>
+      <tr>
+        <td>WORLD-DEM-NEO-DSM </td>
+        <td>5m Accuracy </td>
+        <td>(5*5)or(12*12)</td>
+        <td>AIRBUS</td>
+      </tr>
+      <tr>
+        <td>WORLD-DEM-NEO-DSM </td>
+        <td>5m Accuracy </td>
+        <td>(5*5)or(12*12)</td>
+        <td>AIRBUS</td>
+      </tr>
+     
+      <tr>
+        <td>AIOS-Pulsar </td>
+        <td>12m</td> 
+        <td>-</td>
+        <td>AIOS company</td>
+      </tr>
+      <tr>
+        <td>SRTM </td>
+        <td>30m</td> 
+        <td>-</td>
+        <td>SRTM company</td>
+      </tr>
+       
+       
+    </table>
+  </div>
 </body>
 
 </html>
