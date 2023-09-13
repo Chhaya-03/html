@@ -24,14 +24,14 @@ background-size: auto;
 
 
 html {
-  background: #141414;
+  background: #2f2e2e;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background: #141414;
-  background: linear-gradient(147deg, rgb(18 34 42) 9%, #040404 53%);
+  background: #444546f8;
+  /* background: linear-gradient(147deg, rgba(104, 122, 92, 0.304) 9%, #daedcd53 53%); */
   color: #fff;
   overflow: auto;
 }
@@ -430,37 +430,83 @@ main {
 .slider__nav a:hover {
   opacity: 1;
 }
+
+
 /* slider css end*/
+
+
+/* slidertext */
+
+.slide-text {
+  position: absolute;
+  bottom: 63px; /* Adjust the vertical position */
+  left: 314px; /* Adjust the horizontal position */
+  background-color: rgba(0, 0, 0, 0.1); /* Background color for text */
+  color: #fff; /* Text color */
+  padding: 10px;
+}
+
+.slide-text h2 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.slide-text p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+/* slidertext end */
 </style>
 <body>
  
-    <main> 
+    <!-- <main> 
         <div class="scene">
           <div class="wrapper">
             <div id="sphere" class="sphere">
             </div>
           </div>
         </div>
-      </main>
-
+      </main> -->
+      
+        <!-- Add more slides as needed -->
+    
+      
       <!-- Slider Image -->
-      <section class="container">
+       <section class="container">
         <div class="slider__wrapper">
           <div class="slider">
-            <img src="Penguins.jpg" alt="Mountain"  id="slide1" >
-            <!-- <img src="Hydrangeas.jpg" alt="" > -->
+           <img src="Penguins.jpg" alt="Mountain"  id="slide1" >
+             <div class="slide-text">
+      <h2>Slide 1 Title</h2>
+      <p>Slide 1 Description</p>
+    </div>  
+            
+            <img src="Desert.jpg" alt="" id="slide4">
+             
             <img src="Tulips.jpg" alt="" id="slide2">
-            <img src="Hydrangeas.jpg" alt="" id="slide3">
-            <h1>hello</h1>
+              
+             <img src="Hydrangeas.jpg" alt="" id="slide3">
+           
+          
           </div>
           <div class="slider__nav">
             <a id="btn1" href="#slide1"></a>
                   <a id="btn2" href="#slide2"></a>
                   <a id="btn3" href="#slide3"></a>
+                  <a id="btn4" href="#slide4"></a>
                   
           </div>
         </div>
       </section>
+     
     <!-- Slider Image End-->
       
       
@@ -470,7 +516,7 @@ main {
       
       
       <nav class="navbar">
-        <div><img src="Chrysanthemum.jpg" alt="chhayaaa" height="auto"></div>
+       
       
         <div class="navbar-container container">
             <input type="checkbox" name="" id="">
@@ -492,14 +538,15 @@ main {
     </nav>
 </body>
 <script>
-  const sphere = document.getElementById('sphere');
-const rows = []
+  
+//   const sphere = document.getElementById('sphere');
+// const rows = []
 
-for(i = 0; i < 180; i += 9) {
-  rows.push(`<div class="line" style="transform: rotateY(${i}deg);"></div>`)
-}
+// for(i = 0; i < 180; i += 9) {
+//   rows.push(`<div class="line" style="transform: rotateY(${i}deg);"></div>`)
+// }
 
-sphere.innerHTML = rows.join("");
+// sphere.innerHTML = rows.join("");
 
 
 // slider//
@@ -512,7 +559,7 @@ setInterval(function(){
   if (counter == 4){
     counter = 1;
   }
-}, 500);
+}, 5000);
 // slider end//
 
 </script>
