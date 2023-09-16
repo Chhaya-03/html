@@ -13,24 +13,17 @@
     padding: 0;
     height: 100%;
 }
-body {
 
-background: url(img/Tulips.jpg);
-background-repeat: no-repeat;
-background-size: auto;
-
-
-}
 
 
 html {
-  background: #2f2e2e;
+  background:white;
 }
 
 body {
   display: flex;
   flex-direction: column;
-  background: #444546f8;
+  /* background: #444546f8; */
   /* background: linear-gradient(147deg, rgba(104, 122, 92, 0.304) 9%, #daedcd53 53%); */
   color: #fff;
   overflow: auto;
@@ -185,6 +178,7 @@ main {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    width: inherit;
 }
 
 .html{
@@ -198,25 +192,34 @@ main {
 
 .container{
     max-width: 1200px;
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
 .navbar{
-    box-shadow: 0px 5px 10px 0px #aaa;
+    /* box-shadow: 0px 5px 10px 0px #aaa; */
     position: fixed;
     width: 100%;
-    background: #fff;
+    /* background: #fff; */
     color: #000;
     opacity: 0.85;
     z-index: 100;
+    
 }
 
 .navbar-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     height: 64px;
     align-items: center;
+    margin-left: 132px;
+    display: flex;
+    justify-content: center;
+    height: 26px;
+    align-items: center;
+    background: #0b0b0e;
+    border-radius: 18px;
+    color: white;
 }
 
 .menu-items{
@@ -225,11 +228,17 @@ main {
 }
 .logo{
     order: 1;
-    font-size: 2.3rem;
-    font-size: 72px;
-  background: -webkit-linear-gradient(rgba(37, 58, 117, 0.689), rgba(71, 16, 174, 0.486),rgba(4, 39, 212, 0.623));
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    font-size: 35px;
+    background: -webkit-linear-gradient(rgb(99 15 229 / 40%), rgb(45 109 251),rgb(0 2 14));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: auto;
+  margin: auto;
+  margin-top: 5px;
+  padding-top: 7px;
 }
 
 .menu-items li{
@@ -239,14 +248,15 @@ main {
 }
 
 .navbar a{
-    color: #444;
+    color:white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
 }
 
 .navbar a:hover{
-    color: #117964;
+    color: #0d032db3;
+    background-color: #06fdd4;
 }
 
 @media (max-width: 768px){
@@ -288,6 +298,7 @@ main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        width: 40%;
     }
 
     .navbar-container .hamburger-lines .line{
@@ -295,7 +306,7 @@ main {
         height: 4px;
         width: 100%;
         border-radius: 10px;
-        background: #333;
+        background: #0b00ff91;
     }
     
     .navbar-container .hamburger-lines .line1{
@@ -364,8 +375,9 @@ main {
     }
 }
 
-.container {
-  padding: 2rem;
+.container1 {
+  padding-top: 6.2rem;
+  max-height: 60%;
 }
 /* body {
 
@@ -379,14 +391,14 @@ main {
 
 .slider__wrapper {
   position: relative;
-  max-width: 48rem;
+  /* max-width: 48rem; */
   margin: 0 auto;
 /*   background-color: blue; */
 }
 
 .slider {
   display: flex;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 5;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
@@ -455,7 +467,35 @@ main {
   font-size: 16px;
   margin: 5px 0;
 }
+.scale-bounce-text {
+  font-size: 36px;
+  text-align: center;
+  animation: scaleBounce 2s infinite;
+  text-shadow: 0 0 10px rgba(36, 9, 117, 0.482);
+  /* animation: glow 2s infinite alternate; */
+}
 
+@keyframes scaleBounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+.pulse-text {
+  font-size: 18px;
+  animation: pulse 2s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(2);
+  }
+}
 
 
 
@@ -480,20 +520,20 @@ main {
     
       
       <!-- Slider Image -->
-       <section class="container">
+      <div> <section class="container1">
         <div class="slider__wrapper">
           <div class="slider">
-           <img src="Penguins.jpg" alt="Mountain"  id="slide1" >
+           <img src="google3.PNG" alt="Mountain"  id="slide1" >
              <div class="slide-text">
-      <h2>Slide 1 Title</h2>
-      <p>Slide 1 Description</p>
+      <h3 class="pulse-text">Slide 1 Title</h3>
+      <p class="pulse-text">Slide 1 Description</p>
     </div>  
             
-            <img src="Desert.jpg" alt="" id="slide4">
+            <img src="google3.PNG" alt="" id="slide4">
              
-            <img src="Tulips.jpg" alt="" id="slide2">
+            <img src="google3.PNG" alt="" id="slide2">
               
-             <img src="Hydrangeas.jpg" alt="" id="slide3">
+             <img src="google3.PNG" alt="" id="slide3">
            
           
           </div>
@@ -505,10 +545,21 @@ main {
                   
           </div>
         </div>
-      </section>
+      </section></div>
+      
      
     <!-- Slider Image End-->
-      
+    <div style="text-align: center;">
+      <h2 style="font-size: 30px;
+      background: -webkit-linear-gradient(#1424d3, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;">About Us</h2>
+      <h5 style="color: #000; font-family:system-ui;">Micronet Solutions has been at the forefront of providing geospatial solutions for more than two decades. We are the authorized distributors for leading satellite imagery companies. We bring world-class, high-resolution satellite data to users in India and beyond.
+
+        We are committed to facilitating greater applications of remote sensing, access and affordability of data, ease of buying, and value-added services. We cater to users in diverse industries with high-resolution data, both in optical and radar imagery space.</h5>
+
+    </div>
+     
       
       
       
@@ -517,24 +568,25 @@ main {
       
       <nav class="navbar">
        
-      
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id="">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div>
-            <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Category</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <h1 class="logo">Micronet</h1>
-        </div>
+        <div class="scale-bounce-text" style="align-items:center;"><h1 class="logo">Micronet</h1></div>
+        <div style="align-items: center;">        <div class="navbar-container container">
+          <input type="checkbox" name="" id="">
+          <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Category</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Testimonial</a></li>
+              <li><a href="#">Contact</a></li>
+          </ul>
+          
+      </div></div>
+
     </nav>
 </body>
 <script>
